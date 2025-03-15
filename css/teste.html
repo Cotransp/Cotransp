@@ -1,0 +1,561 @@
+<!DOCTYPE html><html><head>
+<meta charset="utf-8">
+<title>COOMAP - Cooperativa Nacional de Transporte Corporativo</title>
+<meta name="description" content="Fundada em 1997, a COOMAP é uma empresa cooperativa que presta serviços de transporte corporativo para governos, estatais e empresas privadas.">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Webflow" name="generator">
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+<script src="js/webfont.js" type="text/javascript"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favico.png">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/owl.carousel.js"></script>
+<link rel="stylesheet" href="css/owl-carousel.css">
+</head>
+<body>
+
+<script>
+$(document).ready(function(){
+ $("#botao").click(function(){
+  $("#banner").hide();
+});
+});
+</script>
+
+<div class="fixed-navbar w-hidden-medium w-hidden-small w-hidden-tiny w-nav menufixo" data-animation="over-right" data-collapse="medium" data-duration="400" data-ix="hide-fixed-navbar">
+  <div class="w-container"> 
+     <a class="logo-block w-nav-brand w--current" href="./"><img width="150" src="images/logo.png" alt="" class="logo"></a>
+    
+                    <nav role="navigation" class="w-nav-menu nav-menu"> <a href="./" class="w-nav-link nav-link">Início</a>
+                  <div class="dropdown w-dropdown" data-delay="0" data-hover="1" style="max-width: 1200px;">
+                    <div class="dropdown-toggle light nav-link w-dropdown-toggle top-menu-link">
+                      <div>A Coomap</div>
+                      <div class="dropdown-icon w-icon-dropdown-toggle"></div>
+                    </div>
+                    <div class="dropdown-list w-dropdown-list"> 
+                      <a href="quemSomos" class="dropdown-link w-dropdown-link">Quem somos</a>
+                      <a href="governanca" class="dropdown-link w-dropdown-link">Governança</a>
+                      <a href="cooperativismo" class="dropdown-link w-dropdown-link">Cooperativismo</a>
+                      <a href="cooperativismo_responsavel" class="dropdown-link w-dropdown-link">Cooperativismo Responsável</a>
+                      <a href="documentos" class="dropdown-link w-dropdown-link">Documentos e Publicações</a>
+                    </div>
+                  </div>
+                  <a href="servicos" class="w-nav-link nav-link">Serviços </a>
+                  <a href="frota" class="w-nav-link nav-link">Frotas </a>
+                  <a href="mercado" class="w-nav-link nav-link">Mercado </a>
+                  <a href="contrato" class="w-nav-link nav-link">Contratos </a>
+                  <a href="noticias" class="w-nav-link nav-link">Notícias</a>
+                  <a href="contato" class="w-nav-link nav-link">Contato</a>
+                  <a target="_blank" href="https://webmail.skymail.net.br/" class="w-nav-link nav-link">Webmail</a>
+                </nav>
+    
+    <div class="transparant-menu-button w-nav-button">
+      <div class="w-icon-nav-menu"></div>
+    </div>
+  </div>
+  <div class="w-nav-overlay" data-wf-ignore=""></div>
+</div>
+<div id="inicio" data-collapse="medium" data-animation="over-right" data-duration="400" class="navbar w-nav">
+  <div class="large-container w-container"><a href="./" class="logo-block w-nav-brand"><img width="150" src="images/logo.png" alt="" class="logo"></a>
+   
+   
+                   <nav role="navigation" class="w-nav-menu nav-menu princ"> <a href="./" class="w-nav-link nav-link">Início</a>
+                  <div class="dropdown w-dropdown" data-delay="0" data-hover="1" style="max-width: 1200px;">
+                    <div class="dropdown-toggle light nav-link w-dropdown-toggle top-menu-link">
+                      <div>A Coomap</div>
+                      <div class="dropdown-icon w-icon-dropdown-toggle"></div>
+                    </div>
+                    <div class="dropdown-list w-dropdown-list"> 
+                      <a href="quemSomos" class="dropdown-link w-dropdown-link">Quem somos</a>
+                      <a href="governanca" class="dropdown-link w-dropdown-link">Governança</a>
+                      <a href="cooperativismo" class="dropdown-link w-dropdown-link">Cooperativismo</a>
+                      <a href="intercooperacao" class="dropdown-link w-dropdown-link">Intercooperação</a>
+                      <a href="cooperativismo_responsavel" class="dropdown-link w-dropdown-link">Cooperativismo Responsável</a>
+                      <a href="documentos" class="dropdown-link w-dropdown-link">Documentos e Publicações</a>
+                      <a href="organograna" class="dropdown-link w-dropdown-link">Organograna</a>
+
+                    </div>
+                  </div>
+                  <a href="servicos" class="w-nav-link nav-link">Serviços </a>
+                  <a href="frota" class="w-nav-link nav-link">Frotas </a>
+                  <a href="mercado" class="w-nav-link nav-link">Mercado </a>
+                  <a href="contrato" class="w-nav-link nav-link">Contratos </a>
+                  <a href="noticias" class="w-nav-link nav-link">Notícias</a>
+                  <a href="contato" class="w-nav-link nav-link">Contato</a>
+                  <a target="_blank" href="https://webmail.skymail.net.br/" class="cta-button w-inline-block">Webmail</a>
+                </nav>
+   
+   
+   
+   
+    <div class="general-menu-button w-nav-button">
+      <div class="w-icon-nav-menu"></div>
+    </div>
+  </div>
+</div>
+  <div data-ix="show-fixed-navbar"></div>
+<!--<div style=" width: 500px; height: 500px; position: fixed; z-index: 10000;  top: 20%; left: 37%; box-shadow: -1px 3px 20px 11px rgb(0 0 0 / 19%);" id="banner">
+<div id="botao" style="position: absolute;right: 0;padding: 13px; background: #ffffff;font-weight: 900; color: #000000; width: 55px;text-align: center; cursor: pointer;">X</div><img src="banner.jpeg">
+
+</div>
+-->
+
+<div class="app-hero">
+  <div data-ix="show-fixed-navbar"></div>
+  <div class="w-slider top-slider" data-animation="slider" data-duration="1800" data-infinite="1" data-delay="6300" data-autoplay="1">
+    
+    
+    <div style="background-image: url(images/slider01.png);" class="w-slider-mask">
+      <!-- Repetição 1 -->
+      <div class="w-slide slide">
+        <div class="app-hero-overlay">
+          <div class="container w-container">
+            <div class="hero-centered-block">
+              <h1 data-ix="fade-in-on-load" class="hero-title"> <span class="large-hero-title-bold"></span>COOMAP, oferecendo inteligência em transporte há mais de 28 anos.</h1>
+              <h2 class="hero-subtitle">Contamos com equipes que atuam no comercial e operacional desenvolvendo projetos específicos para cada cliente. Isso é gerar solução!</h2>
+            </div>
+            <div align="center" class="hero-button-wrapper"><a href="quemSomos" class="button hero-button w-button">Quem Somos</a><a href="contato" class="_2 button hero-button w-button botaochat">Fale Conosco</a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repetição 1 -->
+      <div class="w-slide slide">
+        <div class="app-hero-overlay">
+          <div class="container w-container">
+            <div class="hero-centered-block">
+              <h1 data-ix="fade-in-on-load" class="hero-title"> <span class="large-hero-title-bold"></span> Soluções de transporte diante da necessidade de cada cliente.</h1>
+              <h2 class="hero-subtitle">Estudo de viabilidade personalizado para atender cada solicitação de nossos clientes.</h2>
+            </div>
+            <div align="center" class="hero-button-wrapper"><a href="quemSomos" class="button hero-button w-button">Quem Somos</a><a href="contato" class="_2 button hero-button w-button botaochat">Fale Conosco</a> </div>
+          </div>
+        </div>
+      </div>
+      
+      
+        
+      
+    </div>
+    
+
+    
+    <div class="baseicon">
+    
+    
+    <div class="container w-container w-hidden-tiny">
+    
+    
+    
+    <div class="process-wrapper">
+      <div class="process-row w-row">
+        <div class="process-column w-col w-col-3">
+          <div class="quadromaster2">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra2"><img src="images/1.svg" width="" height=""></div>
+                </div>
+                <div class="process-title2">Propósito </div>
+              </div>
+              <p class="paragraph2">Transformar vidas transportando sonhos</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="process-column w-col w-col-3">
+          <div class="quadromaster2">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra2"><img src="images/2.svg" width="" height=""></div>
+                </div>
+                <div class="process-title2">Missão</div>
+              </div>
+              <p class="paragraph2">Transportar com excelência e responsabilidade socioambiental</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-column w-col w-col-3">
+          <div class="quadromaster2">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra2"><img src="images/3.svg" width="" height=""></div>
+                </div>
+                <div class="process-title2">Visão</div>
+              </div>
+              <p class="paragraph2">Ser reconhecida nacionalmente pela excelência em transporte</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-column w-col w-col-3">
+          <div class="quadromaster2">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra2"><img src="images/4.svg" width="" height=""></div>
+                </div>
+                <div class="process-title2">Valores</div>
+              </div>
+              <p class="paragraph2">
+Ética e Transparência<br>
+Valorização do ser humano<br>
+Foco no cliente<br>
+Senso do Cooperativismo<br>
+Sustentabilidade Econômica<br>
+Responsabilidade Socioambiental<br>
+              </p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+      <div class="w-container">
+        <div class="titulos">Versatilidade no mercado de demandas para transporte de pessoas<br>
+          cargas e materiais em geral.</div>
+        
+        
+        
+        
+         <div class="owl-carousel carousel2 owl-theme">
+        
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser2.png"><br> <div class="subtext"> Indústrias</div></div></div>
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser3.png"><br> <div class="subtext">  Estatais</div></div></div>
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser4.png"><br><div class="subtext"> Serviço</div></div></div>
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser5.png"><br><div class="subtext">  Obras</div></div></div>
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser6.png"><br><div class="subtext">   Escolas</div></div></div>
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser7.png"><br>  <div class="subtext">  Distribuidoras</div></div></div>
+        <div class="item"> <div class="quadros" align="center"><img width="80%" src="images/ser8.png"><br>  <div class="subtext"> Turismo e lazer</div></div></div>
+        
+        
+        
+
+   </div>
+   <script>
+            $(document).ready(function() {
+              $('.carousel2').owlCarousel({
+                loop: true,
+                margin: 5,
+                responsiveClass: true,
+				autoplay: true,
+                autoplayTimeout: 2000,
+                responsive: {
+                  0: {
+                    items: 2,
+					loop: true,
+                    nav: false
+
+                  },
+                  600: {
+                    items: 3,
+					loop: true,  
+                    nav: false
+                  },
+                  1000: {
+                    items: 7,
+                    nav: false,
+                    loop: true,
+                    margin: 10
+                  }
+                }
+              })
+            })
+          </script>  
+        
+        
+        
+        
+        
+
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="hero-blur-image-block"></div>
+</div>
+
+
+<div class="section tint">
+  <div class="container w-container">
+    <div class="content-wrapper w-container">
+    <div style="padding-left: 0px;" class="w-col w-col-8">
+      <div style="height:489px" class="w-slider top-slider noticias" data-animation="slider" data-duration="900" data-infinite="1" data-delay="3800" data-autoplay="1">
+        <div class="w-slider-arrow-left w-hidden-small w-hidden-tiny">
+          <div class="w-icon-slider-left top-slider-arrow"></div>
+        </div>
+        <div class="w-slider-arrow-right w-hidden-small w-hidden-tiny">
+          <div class="w-icon-slider-right top-slider-arrow"></div>
+        </div>
+        <div class="w-slider-mask">
+                    <a href="noticia?id=50" style="background-image: url('images/imagem_2402251740416733.jpg');" class="w-slide slide">
+          <div class="w-container slider-container">
+            <div class="w-row">
+              <div class="bases">
+                <div class="textobanener" data-uw-styling-context="true">COOMAP realiza 1º Encontro com a Psicóloga 2025 <br>
+                  <span style="font-size:17px; color: #7abc41; font-weight: 400;" data-uw-styling-context="true">Segunda, 24 de fevereiro de 2025.    </span> </div>
+              </div>
+            </div>
+          </div>
+          </a>
+                    <a href="noticia?id=49" style="background-image: url('images/imagem_2002251740080178.jpg');" class="w-slide slide">
+          <div class="w-container slider-container">
+            <div class="w-row">
+              <div class="bases">
+                <div class="textobanener" data-uw-styling-context="true">COOMAP divulga Edital de Convocação da Assembleia Geral Ordinária Digital <br>
+                  <span style="font-size:17px; color: #7abc41; font-weight: 400;" data-uw-styling-context="true">Quinta, 20 de fevereiro de 2025.    </span> </div>
+              </div>
+            </div>
+          </div>
+          </a>
+                    <a href="noticia?id=48" style="background-image: url('images/imagem_0601251736159368.jpg');" class="w-slide slide">
+          <div class="w-container slider-container">
+            <div class="w-row">
+              <div class="bases">
+                <div class="textobanener" data-uw-styling-context="true">Natal Alegre 2024 – Coomap realiza 21ª edição <br>
+                  <span style="font-size:17px; color: #7abc41; font-weight: 400;" data-uw-styling-context="true">Segunda, 06 de janeiro de 2025.    </span> </div>
+              </div>
+            </div>
+          </div>
+          </a>
+                    <a href="noticia?id=47" style="background-image: url('images/imagem_0601251736158956.jpg');" class="w-slide slide">
+          <div class="w-container slider-container">
+            <div class="w-row">
+              <div class="bases">
+                <div class="textobanener" data-uw-styling-context="true">Confraternização 2024 <br>
+                  <span style="font-size:17px; color: #7abc41; font-weight: 400;" data-uw-styling-context="true">Segunda, 06 de janeiro de 2025.    </span> </div>
+              </div>
+            </div>
+          </div>
+          </a>
+                  </div>
+        <div class="w-slider-nav w-slider-nav-invert w-round slide-navigation top-slide"> </div>
+      </div>
+    </div>
+    <div class="w-col w-col-4">
+            <div class="tem2 w-col w-col-12"><a href="noticia?id=50" class="div-text blog w-inline-block">
+        <p class="paragraph uptittle">Segunda, 24 de fevereiro de 2025.    </p>
+        <h4> COOMAP realiza 1º Encontro com a Psicóloga 2025</h4>
+        <p> Atividade com a Psicóloga Juliana Gazineo</p>
+        </a></div>
+            <div class="tem2 w-col w-col-12"><a href="noticia?id=49" class="div-text blog w-inline-block">
+        <p class="paragraph uptittle">Quinta, 20 de fevereiro de 2025.    </p>
+        <h4> COOMAP divulga Edital de Convocação da Assembleia Geral Ordinária Digital</h4>
+        <p> Convocação da Assembleia Geral Ordinária Digital</p>
+        </a></div>
+            <div class="tem2 w-col w-col-12"><a href="noticia?id=48" class="div-text blog w-inline-block">
+        <p class="paragraph uptittle">Segunda, 06 de janeiro de 2025.    </p>
+        <h4> Natal Alegre 2024 – Coomap realiza 21ª edição</h4>
+        <p> 21ª edição do Natal Alegre</p>
+        </a></div>
+            <div class="tem2 w-col w-col-12"><a href="noticia?id=47" class="div-text blog w-inline-block">
+        <p class="paragraph uptittle">Segunda, 06 de janeiro de 2025.    </p>
+        <h4> Confraternização 2024</h4>
+        <p> Confraternização da Coomap 2024</p>
+        </a></div>
+          </div>
+  </div>
+    
+  </div>
+</div>
+
+
+
+<div class="section tint verde">
+  <div class="container w-container">
+    <div class="full-centered section-title-wrapper">
+      <h2 style="color:#FFFFFF" class="section-title">Serviços</h2>
+      <div class="section-description">Cada demanda passa por um estudo de viabilidade personalizado para atender a necessidade de cada solicitação de nossos clientes.</div>
+    </div>
+    <div class="process-wrapper">
+      <div class="process-row w-row">
+        <div class="process-column w-col w-col-33">
+          <div class="quadromaster">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra"><img src="images/1.png" width="" height=""></div>
+                </div>
+                <div class="process-title">Veículos 24h</div>
+              </div>
+              <p class="paragraph">Dispomos de veículos para locação, caminhões, locação de máquinas e equipamentos para construção sem operador, ônibus, micro-ônibus, vans e utilitários.</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-column w-col w-col-33">
+          <div class="quadromaster">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra"><img src="images/2.png" width="" height=""></div>
+                </div>
+                <div class="process-title">Serviços 24h</div>
+              </div>
+              <p class="paragraph">A COOMAP dispõe de veículos para locação, como caminhões, máquinas e equipamentos para construção, ônibus, microônibus, van, utilitários e blindados, além de serviços de operador de máquinas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-column w-col w-col-33">
+          <div class="quadromaster">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra"><img src="images/3.png" width="" height=""></div>
+                </div>
+                <div class="process-title">Garantia</div>
+              </div>
+              <p class="paragraph">A COOMAP assegura aos clientes uma frota de veículos em conformidade com os padrões de manutenção e segurança (veículos para pessoas sejam eles das categorias básicas, adaptados, intermediárias ou de alto padrão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-column w-col w-col-33">
+          <div class="quadromaster">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra"><img src="images/4.png" width="" height=""></div>
+                </div>
+                <div class="process-title">Motoristas Qualificados</div>
+              </div>
+              <p class="paragraph">Os cooperativados da COOMAP passam por processos de qualificação para se tornarem aptos a executar uma direção segura e defensiva, alinhados com as práticas de Segurança do Trabalho e do Trânsito.</p>
+            </div>
+          </div>
+        </div>
+        <div class="process-column w-col w-col-33">
+          <div class="quadromaster">
+            <div class="process-block">
+              <div class="process-title-wrapper">
+                <div class="icones">
+                  <div class="barra"><img src="images/5.png" width="" height=""></div>
+                </div>
+                <div class="process-title">Adequação ao cliente</div>
+              </div>
+              <p class="paragraph">O atendimento às regras e padrões de conduta de nossos clientes é uma característica dos motoristas da COOMAP, visto que são treinados para entender e absorver as características de cada um dos contratantes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section tint">
+  <div class="container w-container">
+    <div align="center" class="product-tab-title">Por que escolher a COOMAP?</div>
+    <div style="margin-bottom:50px;" class="section-title-wrapper small-title"> Conheça algumas empresas que depositaram confiança na COOMAP e a agora recomendam nossos serviços! </div>
+    
+   <div class="owl-carousel carousel1 owl-theme">
+        <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/8.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/9.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/10.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/11.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/12.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/13.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/1_1.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/2_1.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/3_1.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/4_1.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/5_1.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/6.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/7.png" class="service-block-icon"></div> </div>
+
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/14.png" class="service-block-icon"></div> </div>
+     <div class="item"> <div target="_blank" class="w-inline-block"> <img src="images/15.png" class="service-block-icon"></div> </div>
+   </div>
+   <script>
+            $(document).ready(function() {
+              $('.carousel1').owlCarousel({
+                loop: true,
+                margin: 5,
+                responsiveClass: true,
+				autoplay: true,
+                autoplayTimeout: 4000,
+                responsive: {
+                  0: {
+                    items: 2,
+					loop: true,
+                    nav: false
+
+                  },
+                  600: {
+                    items: 3,
+					loop: true,  
+                    nav: false
+                  },
+                  1000: {
+                    items: 5,
+                    nav: false,
+                    loop: true,
+                    margin: 10
+                  }
+                }
+              })
+            })
+          </script>
+
+    
+  </div>
+</div>
+<div class="section2 tint">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15579.551447709602!2d-38.4897823!3d-12.5235872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x960dd5058053aa3d!2sCOOMAP%20-%20Transporte%20Cooperativo!5e0!3m2!1spt-BR!2sbr!4v1650271415783!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div style="position: absolute;width: 100%;height: 450px; background: #ccc0;  margin-top: -455px;"></div>
+</div>
+
+<div class="footer">
+  <div class="container w-container">
+    <div class="w-row">
+      
+      <div style="text-align:left" class="w-col w-col-6"> <strong>Horário de funcionamento</strong><br>
+        <br>
+        Segunda à Sexta-feira das 7:30h às 12h e 13h às 17:30h<br>
+        <br>
+         <strong>Atendimento: </strong> <br>Telefone: (71) 3655-8100<br> E-mail: coomap@coomap.coop.br</div>
+      <div style="text-align:left" class="w-col w-col-4"> <strong>Endereço</strong><br>
+        <br>
+        Rua Albino Emilio Abraão, 123, Bairro Alegre  <br> CEP: 43.850-000, São Sebastião do Passé <br> Bahia - Brasil <br><br><img src="images/SomosCoop-III.png"></div>
+      <div style="text-align:left" class="w-col w-col-2"> 
+         
+         <a href="https://www.instagram.com/coomaptransportes/" target="_blank" class="footer-social-icon w-inline-block"><img src="images/iconr2.svg" class="footer-small-social-icon"></a>
+         <a href="https://www.facebook.com/profile.php?id=100056816342010" target="_blank" class="footer-social-icon w-inline-block"><img src="images/iconr3.svg" class="footer-small-social-icon"></a>
+       </div>
+    </div>
+  </div>
+  <div style="margin-top:50px; padding:20px; color:#888; background-color:#ffffff" class="bottom-footer-block">
+    <p class="bottom-footer-text">Copyright © 2022 -  Todos os direitos reservados / COOMAP – Cooperativa Nacional de Transporte Corporativo</p>
+    
+    
+  </div>
+</div><!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+<div id="enviado" style="background: rgba(0, 99, 31, 0.81);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display:none">
+  <div style="    width: 100%;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    padding-top: 25%;
+    font-size: 35px;
+    font-weight: 800;">DADOS ENVIADOS</div>
+</div>
+
+
+</body></html>
