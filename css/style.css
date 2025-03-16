@@ -102,11 +102,6 @@ nav a {
     background: rgba(0, 128, 0, 0.8); /* Verde com transparência */
 }
 
-.carousel-container {
-    width: 80%; /* Define uma largura fixa */
-    margin: auto; /* Centraliza o carrossel */
-    overflow: hidden; /* Impede que os itens extrapolem */
-}
 
 
 .item {
@@ -116,7 +111,7 @@ nav a {
 
 .quadros img {
     display: flex;
-    width: 100%;
+    width: 80%;
     display: block;
 }
 
@@ -126,7 +121,7 @@ nav a {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     color: white;
     padding: 20px;
     box-sizing: border-box;
@@ -137,18 +132,16 @@ nav a {
     font-size: 1.2em;
 }
 .carousel-container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px; /* Ajuste a largura máxima conforme necessário */
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 70%; /* Aumentei a largura para melhor visualização */
+    margin: 30px auto; /* Centraliza e adiciona margem */
     overflow: hidden;
+    position: relative; /* Necessário para posicionar os botões */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .carousel {
-    width: 60%; /* Ajuste a largura do carrossel conforme necessário */
+    width: 100%; /* Carrossel ocupa toda a largura do container */
     position: relative;
     overflow: hidden;
 }
@@ -165,17 +158,22 @@ nav a {
 .carousel-slide img {
     width: 100%;
     display: block;
+    object-fit: cover; /* Garante que as imagens cubram o espaço */
+    height: 400px; /* Altura fixa para as imagens */
 }
 
 .carousel-prev, .carousel-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave */
 }
 
 .carousel-prev {
@@ -186,12 +184,52 @@ nav a {
     right: 10px;
 }
 
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Escurece no hover */
+}
+
 .carousel-indicators {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+.carousel-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.carousel-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.carousel-description {
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 .carousel-indicators button {
